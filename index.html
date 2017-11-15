@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+  <title>Dashboard</title>
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">B-Blog</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="posts.html">Posts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="categories.html">Categories</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="users.html">Users</a>
+        </li>
+      </ul>
+
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-user" aria-hidden="true"></i>Welcome B</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="profile.html">Profile</a>
+            <a class="dropdown-item" href="settings.html">Settings</a>
+          </div>
+        </li>
+        <li>
+          <a class="nav-link" href="login.html">
+            <i class="fa fa-sign-out" aria-hidden="true"></i>Logout</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- dashboard -->
+  <div class="container-fluid bg-primary bigTitle" id="bigTitle">
+    <i class="fa fa-cog fa-3x" aria-hidden="true"></i>
+    <h1>Dashboard</h1>
+  </div>
+
+  <!-- add buttons -->
+  <div class="container-fluid text-center add">
+    <ul class="list-inline">
+      <li class="list-inline-item">
+        <a href="#addPost" class="btn btn-primary">+ Add Post</a>
+      </li>
+      <li class="list-inline-item">
+        <a href="#addCategory" class="btn btn-success">+ Add Category</a>
+      </li>
+      <li class="list-inline-item">
+        <a href="#addUser" class="btn btn-warning">+ Add User</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- posts -->
+  <div class="container-fluid">
+    <div class="row d-flex justify-content-around" style="margin-top: 20px">
+      <div class="col-md-6 align-items-center postsTable">
+        <h1 class="greyBg">Latest Posts</h1>
+        <table>
+          <tr class="categories">
+            <th>#</th>
+            <th>Title</th>
+            <th>Category</th>
+            <th>Date Posted</th>
+          </tr>
+          <!-- 1 -->
+          <tr class="greyBg">
+            <td>1</td>
+            <td>Post One</td>
+            <td>Development</td>
+            <td>July 11, 2017</td>
+          </tr>
+          <!-- 2 -->
+          <tr>
+            <td>2</td>
+            <td>Post Two</td>
+            <td>Development</td>
+            <td>July 11, 2017</td>
+          </tr>
+          <!-- 3 -->
+          <tr class="greyBg">
+            <td>3</td>
+            <td>Post Three</td>
+            <td>Development</td>
+            <td>July 11, 2017</td>
+          </tr>
+          <!-- 4 -->
+          <tr>
+            <td>4</td>
+            <td>Post Four</td>
+            <td>Development</td>
+            <td>July 11, 2017</td>
+          </tr>
+          <!-- 5 -->
+          <tr class="greyBg">
+            <td>5</td>
+            <td>Post Five</td>
+            <td>Development</td>
+            <td>July 11, 2017</td>
+          </tr>
+          <!-- 6 -->
+          <tr>
+            <td>6</td>
+            <td>Post Six</td>
+            <td>Development</td>
+            <td>July 11, 2017</td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- cards -->
+      <div class="cards">
+        <div class="card bg-primary">
+          <h2>Posts</h2>
+          <i class="fa fa-pencil fa-5x" aria-hidden="true">6</i>
+          <a href="posts.html" class="btn btn-primary btn-sm">View</a>
+        </div>
+        <div class="card bg-success">
+          <h2>Categories</h2>
+          <i class="fa fa-folder-open-o fa-5x" aria-hidden="true">4</i>
+          <a href="categories.html" class="btn btn-success btn-sm">View</a>
+        </div>
+        <div class="card bg-warning">
+          <h2>Users</h2>
+          <i class="fa fa-users fa-5x" aria-hidden="true">6</i>
+          <a href="users.html" class="btn btn-warning btn-sm">View</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer class="container-fluid bg-dark">
+    <h5>Copyright 2017, B-Blog</h5>
+  </footer>
+
+
+  <!-- JS for bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+
+</html>

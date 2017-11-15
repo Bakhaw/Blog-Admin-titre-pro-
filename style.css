@@ -1,0 +1,145 @@
+/*(BOOTSTRAP)*/
+
+.btn-warning {
+  color: #fff;
+}
+
+
+/*INDEX.HTML (DASHBOARD PAGE)*/
+
+
+/*Navbar*/
+
+.navbar {
+  height: 40px;
+}
+
+
+/*Dashboard*/
+
+.bigTitle {
+  padding: 15px;
+  display: flex;
+  justify-content: flex-start;
+  color: #fff;
+}
+
+
+/*Add-buttons*/
+
+.add {
+  padding: 20px;
+  background-color: #F7F7F7;
+}
+
+.add a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.add a:hover {
+  color: #fff;
+}
+
+
+/*Posts*/
+
+.posts {
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+}
+
+th, tr, td {
+  padding: 15px;
+}
+
+.categories {
+  background-color: #292B2C;
+  color: #fff;
+}
+
+.greyBg {
+  background-color: #F7F7F9;
+  padding: 10px;
+}
+
+
+/*cards*/
+
+.cards .card {
+  width: 200px;
+  height: 180px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  color: #fff;
+}
+
+.cards .card a {
+  border-color: #fff;
+  color: #fff;
+}
+
+
+/*footer*/
+
+footer {
+  text-align: center;
+  color: #fff;
+  height: 100%;
+  padding: 20px;
+}
+
+
+/*POSTS.HTML (POSTS PAGE)*/
+
+.searchPosts, .searchCategories, .searchUsers {
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #F7F7F7;
+}
+
+.pagination {
+  padding: 20px;
+}
+
+
+/*PROFILE.HTML (PROFILE PAGE)*/
+
+.card {
+  margin: 20px;
+}
+
+.avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card img {
+  width: 250px;
+  height: 250px;
+}
+
+.cardButtons {
+  padding: 5px;
+}
+
+/*SETTINGS.HTML (SETTINGS PAGE)*/
+
+.settings * {
+  padding: 10px;
+}
+
+/*LOGIN.HTML (LOGIN PAGE)*/
+
+.login {
+  display: flex;
+  justify-content: center;
+}
